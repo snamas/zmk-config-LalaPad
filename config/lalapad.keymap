@@ -19,12 +19,7 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
 // cirque trackpad input&layer control
-&msc {
-    delay-ms = <0>;              // 遅延なし
-    trigger-period-ms = <10>;    // 10ミリ秒ごとにトリガー
-    time-to-max-speed-ms = <0>;  // 即座に最大速度に
-    acceleration-exponent = <0>;  // 加速なし
-};
+
 &glidepoint_listener_R {
     input-processors =
         <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
@@ -74,13 +69,6 @@
 / {
     behaviors {
         // Encoder to Mouse Scroll
-       mouse_scrl: mouse_wheel_scrl {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            #sensor-binding-cells = <2>;
-            bindings = <&msc>, <&msc>;
-
-            tap-ms = <10>;
-        };
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
@@ -204,7 +192,7 @@
 
             bindings = <
 &kp ESC    &kp Q         &kp W         &kp C            &kp R        &kp P          &kp J          &kp L          &kp I            &kp X       &kp LANG3      &mt EQUAL MINUS
-&kp TAB    &kp S         &kp K         &kp T            &kp N        &kp H          &kp F          &kp U          &kp E            &kp O       &lt 2 A        &lt 6 RBKT
+&kp TAB    &kp S         &kp K         &kp T            &kp N        &kp H          &kp F          &kp U          &kp E            &kp O       &lt 2 A        &lt SCROLL_R_LAYER RBKT
 &kp LSHFT  &kp Z         &kp G         &kp D            &kp M        &kp B          &kp Y          &kp V          &kp COMMA        &kp PERIOD  &mt2 UP SLASH  &kp BSLH
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT   &lt 1 SPACE  &lt 3 TAB      &lt 3 LANG2    &kp BACKSPACE  &lt 4 RET        &kp LEFT    &kp DOWN       &kp RIGHT
                          &allow_end    &allow_pagedown  &allow_home  &allow_pageup  &allow_pageup  &allow_home    &allow_pagedown  &allow_end
@@ -278,9 +266,6 @@
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings =
-                <&mouse_scrl SCRL_DOWN SCRL_UP>,
-                <&mouse_scrl SCRL_UP SCRL_DOWN>;
         };
         };
 
