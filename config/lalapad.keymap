@@ -181,7 +181,7 @@
             bindings = <&mo>, <&mkp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <50>;
+            tapping-term-ms = <100>;
         };
     };
 
@@ -207,7 +207,7 @@
 
             bindings = <
 &kp TILDE  &kp JP_CARET      &kp JP_HASH         &kp JP_DLLR    &kp JP_PRCNT        &kp JP_TILDE  &kp JP_UNDER  &kp JP_LBKT      &kp JP_RBKT      &kp LESS_THAN    &kp JP_MHEN       &kp KP_NUMBER_9
-&trans     &kp JP_AT         &kp JP_EXCL  &kp JP_QMARK  &kp JP_AMPS      &kp JP_PIPE   &kp EQUAL       &kp JP_LPAR  &kp JP_RPAR  &kp JP_COLON        &kp JP_SEMI  &kp KP_NUMBER_6
+&trans     &kp JP_AT         &kp JP_EXCL  &kp JP_QMARK  &kp JP_AMPS      &kp JP_PIPE   &kp JP_EQUAL       &kp JP_LPAR  &kp JP_RPAR  &kp JP_COLON        &kp JP_SEMI  &kp KP_NUMBER_6
 &trans     &kp JP_YEN  &kp JP_GRAVE        &kp JP_SQT       &kp JP_DQT  &kp JP_EQUAL  &kp MINUS       &kp JP_LBRC        &kp JP_RBRC        &kp KP_NUMBER_1  &kp JP_BSLH  &kp KP_NUMBER_3
 &trans     &trans         &trans           &trans        &trans             &trans     &trans          &kp DELETE            &trans                 &kp KP_NUMBER_0  &dot_comma     &kp KP_ENTER
                           &trans           &trans        &trans             &trans     &trans          &trans                &trans                 &trans
@@ -218,7 +218,7 @@
             display-name = "tertiary_layer";
             bindings = <
 &trans  &kp LC(F4)  &kp LS(LG(LEFT))  &kp RG(UP_ARROW)    &kp LG(LS(RIGHT))  &kp LC(T)  &trans  &trans     &mkp MCLK             &mkp MCLK  &trans     &trans
-&trans  &kp F6      &kp LC(PAGE_UP)   &kp LG(DOWN_ARROW)  &kp LC(PAGE_DOWN)  &kp LC(N)  &trans  &mkp LCLK  &mouse_mid_sc 5 MCLK  &mkp RCLK  &mkp LCLK  &trans
+&mo 1  &kp F6      &kp LC(PAGE_UP)   &kp LG(DOWN_ARROW)  &kp LC(PAGE_DOWN)  &kp LC(N)  &trans  &mkp LCLK  &mouse_mid_sc 5 MCLK  &mkp RCLK  &mkp LCLK  &trans
 &trans  &kp LC(Z)   &kp LC(X)         &kp LC(C)           &kp LC(V)          &kp LC(F)  &trans  &trans     &trans                &trans     &trans     &trans
 &trans  &trans      &trans            &kp LC(C)           &kp LC(V)          &trans     &trans  &mkp MB4   &mkp MB5              &trans     &trans     &trans
                     &trans            &trans              &trans             &trans     &trans  &trans     &trans                &trans
