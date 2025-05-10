@@ -193,7 +193,7 @@
             sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
 
             bindings = <
-&kp ESC    &kp Q         &kp W         &kp C            &kp R        &kp P          &kp J          &kp L          &kp I            &kp X       &kp LA(GRAVE)  &mt EQUAL MINUS
+&kp ESC    &kp Q         &kp W         &kp C            &kp R        &kp P          &kp J          &kp L          &kp I            &kp X       &kp JP_ZKHK  &mt EQUAL MINUS
 &kp TAB    &kp S         &kp K         &kp T            &kp N        &kp H          &kp F          &kp U          &kp E            &kp O       &lt 2 A        &lt 6 RBKT
 &kp LSHFT  &kp Z         &kp G         &kp D            &kp M        &kp B          &kp Y          &kp V          &kp COMMA        &kp PERIOD  &mt2 UP SLASH  &kp BSLH
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 SPACE      &lt 1 TAB    &lt 3 TAB      &lt 3 LANG2    &kp BACKSPACE  &lt 4 RET        &kp LEFT    &kp DOWN       &kp RIGHT
@@ -206,9 +206,9 @@
             sensor-bindings = <&scroll_left_right>, <&scroll_left_right>;
 
             bindings = <
-&kp TILDE  &kp CARET      &kp HASH         &kp DOLLAR    &kp PERCENT        &kp TILDE  &kp UNDERSCORE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN    &kp INT5       &kp KP_NUMBER_9
-&trans     &kp AT         &kp EXCLAMATION  &kp QUESTION  &kp AMPERSAND      &kp PIPE   &kp EQUAL       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON        &kp SEMICOLON  &kp KP_NUMBER_6
-&trans     &kp BACKSLASH  &kp GRAVE        &kp SQT       &kp DOUBLE_QUOTES  &kp EQUAL  &kp MINUS       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp KP_NUMBER_1  &kp BACKSLASH  &kp KP_NUMBER_3
+&kp TILDE  &kp JP_CARET      &kp JP_HASH         &kp JP_DLLR    &kp JP_PRCNT        &kp JP_TILDE  &kp JP_UNDER  &kp JP_LBKT      &kp JP_RBKT      &kp LESS_THAN    &kp JP_MHEN       &kp KP_NUMBER_9
+&trans     &kp JP_AT         &kp JP_EXCL  &kp JP_QMARK  &kp JP_AMPS      &kp JP_PIPE   &kp EQUAL       &kp JP_LPAR  &kp JP_RPAR  &kp JP_COLON        &kp JP_SEMI  &kp KP_NUMBER_6
+&trans     &kp JP_YEN  &kp JP_GRAVE        &kp JP_SQT       &kp JP_DQT  &kp JP_EQUAL  &kp MINUS       &kp JP_LBRC        &kp JP_RBRC        &kp KP_NUMBER_1  &kp JP_BSLH  &kp KP_NUMBER_3
 &trans     &trans         &trans           &trans        &trans             &trans     &trans          &kp DELETE            &trans                 &kp KP_NUMBER_0  &dot_comma     &kp KP_ENTER
                           &trans           &trans        &trans             &trans     &trans          &trans                &trans                 &trans
             >;
@@ -240,8 +240,8 @@
             display-name = "scroll_l_layer";
             bindings = <
 &kp N1  &kp TAB       &kp N7  &kp N8   &kp N9  &kp MINUS  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp ASTERISK  &kp N4  &kp N5   &kp N6  &kp PLUS   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp FSLH      &kp N1  &kp N2   &kp N3  &kp EQUAL  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp JP_ASTRK  &kp N4  &kp N5   &kp N6  &kp JP_PLUS   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp JP_SLASH      &kp N1  &kp N2   &kp N3  &kp JP_EQUAL  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans        &kp N0  &kp DOT  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
                       &trans  &trans   &trans  &trans     &trans  &trans  &trans  &trans
             >;
