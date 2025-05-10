@@ -19,7 +19,12 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
 // cirque trackpad input&layer control
-
+&msc {
+    delay-ms = <0>;              // 遅延なし
+    trigger-period-ms = <10>;    // 10ミリ秒ごとにトリガー
+    time-to-max-speed-ms = <0>;  // 即座に最大速度に
+    acceleration-exponent = <0>;  // 加速なし
+};
 &glidepoint_listener_R {
     input-processors =
         <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
@@ -69,7 +74,13 @@
 / {
     behaviors {
         // Encoder to Mouse Scroll
+       mouse_scrl: mouse_wheel_scrl {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
 
+            tap-ms = <10>;
+        };
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
@@ -266,6 +277,11 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
+
+            sensor-bindings =
+                <&mouse_scrl SCRL_DOWN SCRL_UP>,
+                <&mouse_scrl SCRL_UP SCRL_DOWN>;
+        };
         };
 
         SYSTEM_LAYER {
