@@ -195,7 +195,7 @@
 &kp LSHFT    &kp S         &kp K         &kp T            &kp N        &kp H          &kp F          &kp U        &mt2 LCTRL E            &kp O       &lt 4 A        &lt 6 RBKT
 &kp LSHFT  &kp Z         &kp G         &kp D            &kp M        &kp B          &kp Y          &kp V          &kp COMMA        &kp PERIOD  &mt2 UP SLASH  &kp BSLH
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 SPACE      &lt 3 TAB    &lt 3 TAB      &lt 3 LANG2    &kp BACKSPACE  &lt 2 RET        &kp LEFT    &kp DOWN       &kp RIGHT
-                         &allow_pagedown    &allow_home allow_pageup  &allow_end  &allow_end  &allow_pageup    &allow_home  &allow_pagedown
+                         &allow_pagedown    &allow_home &allow_pageup  &allow_end  &allow_end  &allow_pageup    &allow_home  &allow_pagedown
             >;
         };
 
