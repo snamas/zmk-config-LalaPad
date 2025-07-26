@@ -191,8 +191,8 @@
             sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
 
             bindings = <
-&kp ESC    &kp Q         &kp W         &kp C            &kp R        &kp P          &kp L          &kp J          &kp I            &kp X       &kp JP_ZKHK  &mt EQUAL MINUS
-&kp LSHFT    &kp S         &kp K         &kp T            &kp N        &kp H          &kp F          &kp U        &mt2 LCTRL E            &kp O       &lt 4 A        &lt 6 RBKT
+&kp ESC    &kp Q         &kp W         &kp C            &kp R        &kp P          &kp J          &kp L          &kp I            &kp X       &kp JP_ZKHK  &mt EQUAL MINUS
+&lt 4 TAB    &kp S         &kp K         &kp T            &kp N        &kp H          &kp F          &kp U        &mt2 LCTRL E            &kp O       &lt 4 A        &lt 6 RBKT
 &kp LSHFT  &kp Z         &kp G         &kp D            &kp M        &kp B          &kp Y          &kp V          &kp COMMA        &kp PERIOD  &mt2 UP SLASH  &kp BSLH
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 SPACE      &lt 3 TAB    &lt 3 TAB      &lt 3 LANG2    &kp BACKSPACE  &lt 2 RET        &kp LEFT    &kp DOWN       &kp RIGHT
                          &allow_pagedown    &allow_home &allow_pageup  &allow_end  &allow_end  &allow_pageup    &allow_home  &allow_pagedown
@@ -238,7 +238,7 @@
                     bindings = <
                     &trans  &kp LC(F4)  &kp LS(LG(LEFT))  &kp RG(UP_ARROW)    &kp LG(LS(RIGHT))  &kp LC(T)  &trans  &trans     &mkp MCLK             &mkp MCLK  &trans     &trans
                     &mo 1  &kp F6      &kp LC(PAGE_UP)   &kp LG(DOWN_ARROW)  &kp LC(PAGE_DOWN)  &kp LC(N)  &trans  &mkp LCLK  &mouse_mid_sc 5 MCLK  &mkp RCLK  &trans  &trans
-                    &trans  &kp LC(Z)   &kp LC(X)         &kp LC(C)           &kp LC(V)          &kp LC(F)  &trans  &trans     &trans                &trans     &trans     &trans
+                    &trans  &kp LC(Z)   &mkp MB4         &kp LC(C)           &mkp MB5          &kp LC(F)  &trans  &trans     &trans                &trans     &trans     &trans
                     &trans  &trans      &trans            &kp LC(C)           &kp LC(V)          &trans     &trans  &mkp MB4   &mkp MB5              &trans     &trans     &trans
                                         &trans            &trans              &trans             &trans     &trans  &trans     &trans                &trans
                                 >;
