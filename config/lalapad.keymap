@@ -238,7 +238,7 @@
                     bindings = <
                     &trans  &kp LC(F4)  &kp LS(LG(LEFT))  &kp RG(UP_ARROW)    &kp LG(LS(RIGHT))  &kp LC(T)  &trans  &trans     &mkp MCLK             &mkp MCLK  &trans     &trans
                     &mo 1  &kp F6      &kp LC(PAGE_UP)   &kp LG(DOWN_ARROW)  &kp LC(PAGE_DOWN)  &kp LC(N)  &trans  &mkp LCLK  &mouse_mid_sc 5 MCLK  &mkp RCLK  &trans  &trans
-                    &trans  &kp LC(Z)   &mkp MB4         &kp LC(C)           &mkp MB5          &kp LC(F)  &trans  &trans     &trans                &trans     &trans     &trans
+                    &trans  &kp LC(Z)   &mkp MB4         &kp LC(C)           &mkp MB5          &kp RET  &trans  &trans     &trans                &trans     &trans     &trans
                     &trans  &trans      &trans            &kp LC(C)           &kp LC(V)          &kp RET     &trans  &mkp MB4   &mkp MB5              &trans     &trans     &trans
                                         &trans            &trans              &trans             &trans     &trans  &trans     &trans                &trans
                                 >;
